@@ -7,21 +7,21 @@ Suite Teardown    fechar navegador
 
 *** Test Cases ***
 [CTW-O1]Clicar no botão Azul
-    Wait Home Page visible 
-    Clicks button "{name_button}"    button
+    Aguardar a Home Page está visivel 
+    Clicar no botão            button
 
 [CTW-O2]Clicar no botão Vermelho
-    Wait Home Page visible 
-    Clicks button "{name_button}"    button alert
+    Aguardar a Home Page está visivel 
+    Clicar no botão            button alert
 
 [CTW-O3]Clicar no botão Verde
-    Wait Home Page visible 
-    Clicks button "{name_button}"    button success
+    Aguardar a Home Page está visivel 
+    Clicar no botão            button success
 
 [CTW-O4]Clicar em todos os botões "edit"
-    Wait Home Page visible 
-    Clicks button "edit"       
+    Aguardar a Home Page está visivel 
+    Clicar no texto "edit"     
 
 [CTW-O5]Clicar em todos os botões "delete"
-    Wait Home Page visible 
-    Clicks button "delete"     
+    Aguardar a Home Page está visivel 
+    Clicar no texto "delete"    

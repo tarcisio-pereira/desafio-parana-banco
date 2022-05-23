@@ -4,17 +4,17 @@ Documentation    Esse arquivo contém todas as Keywords dos testes da WEB
 Library          SeleniumLibrary 
 
 *** Keywords ***
-Wait Home Page visible
+Aguardar a Home Page está visivel
     Wait Until Page Contains    Challenging DOM
     Capture Page Screenshot
 
-Clicks button "{name_button}"
+Clicar no botão
     [Arguments]                ${name_button}
     Click Element              xpath=//a[@class='${name_button}']
     Capture Page Screenshot
 
-Clicks button "${text}"
-    @{index}    Create List    1    2    3    4    5    6    7    8    9
+Clicar no texto "${text}"
+    @{index}    Create List    1    2    3    4    5    6    7    8    10
 
     FOR    ${i}    IN    @{index}
 
