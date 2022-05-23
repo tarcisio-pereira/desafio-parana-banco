@@ -1,6 +1,9 @@
 #   Desafio Parana Banco 
-
-## Configuração 
+  
+  O projeto ultiliza o Robotframework como estrutura genérica de automação de teste, as principais bibliotecas são SeleniumLibrary para os testes WEB e RequestLibrary para os testes de API 
+  
+## Instalação 
+1.
  - Instale o Python e pip v3.9 
  - Configure o Python as variáveis de ambiente
  - python --version
@@ -8,18 +11,20 @@
 
  - Site de apoio: https://medium.com/@rafasousa/fazer-seu-primeiro-script-de-teste-automatizado-com-robot-framework-8f6f254cc738
 
- No prompt de comando (cmd) na pasta do execute:
+2. 
+ No prompt de comando (cmd) na pasta do projeto execute:
    - pipenv shell          #  Criar um ambiente virtual 
-   - pipenv install        #  Baixar as dependências do projeto
-
- Baixar o webdriver do navegador fixefox 
+   - pipenv install        #  Baixar as dependências do projeto 
+   
+3. 
+[Recomendado] Baixar o webdriver do navegador fixefox (O projeto está configurado para rodar no navegador do firefox) 
    - Verifique a versão do seu navegador 
    - Baixar o driver compativel com o seu navegador  https://github.com/mozilla/geckodriver/releases
 
   Site de apoio: https://pedrohjmartins.medium.com/como-configurar-geckodriver-no-windows-d32d1c5d5f8d
 
 
- Baixar o webdriver do navegador Google Chrome 
+ Baixar o webdriver do navegador Google Chrome (Caso deseje rodar no chrome deve alterar a variável ${browser} de firefox para gc) 
    - Verifique a versão do seu navegador 
    - Baixar o driver compativel com o seu navegador  https://chromedriver.chromium.org/
 
@@ -55,14 +60,14 @@ robotframework-seleniumlibrary==6.0.0
 
 ## Execução de testes 
 
-`pipenv run robot -d testsresults  <dir> <path>/<to>/<file>.robot`
+`pipenv robot -d testsresults  <dir> <path>/<to>/<file>.robot`
 
 - Executar todos os testes
-`pipenv run robot -d testsresults  tests/`
+`pipenv robot -d testsresults  tests/`
 
 - -d | para guardar o resultado dentro da pasta testsresults
-- -i | para executar os testes que tem a tag        ex: `pipenv run robot -d testsresults -i <tag> <dir> <path>/<to>/<file>.robot`
-- -e | para não executar os testes que tem a tag    ex: `pipenv run robot -d testsresults -e <tag> <dir> <path>/<to>/<file>.robot`
-- -t | para executar somente um teste da suíte      ex: `pipenv run robot -d testsresults -t <"name_testcase"> <dir> <path>/<to>/<file>.robot`
+- -i | para executar os testes que tem a tag        ex: `pipenv robot -d testsresults -i <tag> <dir> <path>/<to>/<file>.robot`
+- -e | para não executar os testes que tem a tag    ex: `pipenv robot -d testsresults -e <tag> <dir> <path>/<to>/<file>.robot`
+- -t | para executar somente um teste da suíte      ex: `pipenv robot -d testsresults -t <"name_testcase"> <dir> <path>/<to>/<file>.robot`
 - -V | para "setar" uma variável no momento da excução do teste  
  ...   ex: `pipenv run robot -V Browser:Firefox -d testsresults -t <"name_testcase"> <dir> <path>/<to>/<file>.robot`
