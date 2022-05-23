@@ -1,0 +1,260 @@
+{
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "id"
+    ],
+    "properties": {
+        "0": {
+            "type": "object",
+            "default": {},
+            "title": "The 0 Schema",
+            "required": [
+                "id",
+                "name",
+                "username",
+                "email",
+                "address",
+                "phone",
+                "website",
+                "company"
+            ],
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The id Schema",
+                    "examples": [
+                        1
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "Tarcísio Mendes Pereira"
+                    ]
+                },
+                "username": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The username Schema",
+                    "examples": [
+                        "tarcisio.mendes"
+                    ]
+                },
+                "email": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The email Schema",
+                    "examples": [
+                        "tarcisio.mendes@xpto.com"
+                    ]
+                },
+                "address": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The address Schema",
+                    "required": [
+                        "street",
+                        "suite",
+                        "city",
+                        "zipcode",
+                        "geo"
+                    ],
+                    "properties": {
+                        "street": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The street Schema",
+                            "examples": [
+                                "Ator Paulo Gustavo"
+                            ]
+                        },
+                        "suite": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The suite Schema",
+                            "examples": [
+                                "Apt. 246"
+                            ]
+                        },
+                        "city": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The city Schema",
+                            "examples": [
+                                "Itaborai"
+                            ]
+                        },
+                        "zipcode": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The zipcode Schema",
+                            "examples": [
+                                "24230053"
+                            ]
+                        },
+                        "geo": {
+                            "type": "object",
+                            "default": {},
+                            "title": "The geo Schema",
+                            "required": [
+                                "lat",
+                                "lng"
+                            ],
+                            "properties": {
+                                "lat": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The lat Schema",
+                                    "examples": [
+                                        "-37.3159"
+                                    ]
+                                },
+                                "lng": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "The lng Schema",
+                                    "examples": [
+                                        "81.1496"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "lat": "-37.3159",
+                                "lng": "81.1496"
+                            }]
+                        }
+                    },
+                    "examples": [{
+                        "street": "Ator Paulo Gustavo",
+                        "suite": "Apt. 246",
+                        "city": "Itaborai",
+                        "zipcode": "24230053",
+                        "geo": {
+                            "lat": "-37.3159",
+                            "lng": "81.1496"
+                        }
+                    }]
+                },
+                "phone": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The phone Schema",
+                    "examples": [
+                        "1-770-736-8031 x56442"
+                    ]
+                },
+                "website": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The website Schema",
+                    "examples": [
+                        "xpto.org"
+                    ]
+                },
+                "company": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The company Schema",
+                    "required": [
+                        "name",
+                        "catchPhrase",
+                        "bs"
+                    ],
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The name Schema",
+                            "examples": [
+                                "Romaguera-Crona"
+                            ]
+                        },
+                        "catchPhrase": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The catchPhrase Schema",
+                            "examples": [
+                                "Multi-layered client-server neural-net"
+                            ]
+                        },
+                        "bs": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The bs Schema",
+                            "examples": [
+                                "harness real-time e-markets"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "name": "Romaguera-Crona",
+                        "catchPhrase": "Multi-layered client-server neural-net",
+                        "bs": "harness real-time e-markets"
+                    }]
+                }
+            },
+            "examples": [{
+                "id": 1,
+                "name": "Tarcísio Mendes Pereira",
+                "username": "tarcisio.mendes",
+                "email": "tarcisio.mendes@xpto.com",
+                "address": {
+                    "street": "Ator Paulo Gustavo",
+                    "suite": "Apt. 246",
+                    "city": "Itaborai",
+                    "zipcode": "24230053",
+                    "geo": {
+                        "lat": "-37.3159",
+                        "lng": "81.1496"
+                    }
+                },
+                "phone": "1-770-736-8031 x56442",
+                "website": "xpto.org",
+                "company": {
+                    "name": "Romaguera-Crona",
+                    "catchPhrase": "Multi-layered client-server neural-net",
+                    "bs": "harness real-time e-markets"
+                }
+            }]
+        },
+        "id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The id Schema",
+            "examples": [
+                11
+            ]
+        }
+    },
+    "examples": [{
+        "0": {
+            "id": 1,
+            "name": "Tarcísio Mendes Pereira",
+            "username": "tarcisio.mendes",
+            "email": "tarcisio.mendes@xpto.com",
+            "address": {
+                "street": "Ator Paulo Gustavo",
+                "suite": "Apt. 246",
+                "city": "Itaborai",
+                "zipcode": "24230053",
+                "geo": {
+                    "lat": "-37.3159",
+                    "lng": "81.1496"
+                }
+            },
+            "phone": "1-770-736-8031 x56442",
+            "website": "xpto.org",
+            "company": {
+                "name": "Romaguera-Crona",
+                "catchPhrase": "Multi-layered client-server neural-net",
+                "bs": "harness real-time e-markets"
+            }
+        },
+        "id": 11
+    }]
+}

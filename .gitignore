@@ -7,7 +7,7 @@ bin-release/
 # Other files and folders
 .settings/
 .vscode/
-../testsresultes/
+./testsresults
 # Executables
 *.swf
 *.air
