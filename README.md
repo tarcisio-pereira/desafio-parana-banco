@@ -16,7 +16,8 @@
 - [Python](https://www.python.org/), como linguagem de programação 
 - [Robot Framework](https://robotframework.org/), como estrutura genérica de automação de teste;
 - [SeleniumLibrary](https://github.com/robotframework/SeleniumLibrary), como biblioteca para automação web 
-- [GherkinBDD], como descrição de comportamentos.
+- [RequestLibrary](https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html#library-documentation-top), como biblioteca para automação da API 
+- [jsonvalidator](https://pypi.org/project/robotframework-jsonvalidator/), como bibliotexa para validar o json 
 
 ## Execução de testes 
 
