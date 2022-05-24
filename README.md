@@ -33,8 +33,9 @@ Adiconar as bibliotecas:
    - Adicionar o arquivo no direório  C:\Users\name.user\AppData\Local\Programs\Python\Python39 
 
   Obs:O Webdriver instalado deve ser do navegador que deseja rodar os seus testes, cada navegador possui seu webdriver de acordo com a sua versão 
-4.
-
+  
+  
+  4.
 ## Execução de testes 
 
 `robot -d testsresults  <dir> <path>/<to>/<file>.robot`
